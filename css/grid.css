@@ -1,0 +1,56 @@
+/*grid de index*/
+.grid_container{
+    width: 90%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    grid-template-rows: repeat(2,50%);
+    column-gap: 40px;
+    grid-template-areas:
+    "corriendo comida bailando bailando cafe masaje"
+    "corriendo comida facial facial cafe masaje";
+}
+#corriendo{
+    grid-area: corriendo;
+}
+#comida{
+    grid-area: comida;
+}
+#bailando{
+    grid-area: bailando;
+}
+#cafe{
+    grid-area: cafe;
+}
+#masaje{
+    grid-area: masaje;
+}
+#facial{
+    grid-area: facial;
+}
+
+/*grid de recetas*/
+.grid_recetas{
+    /* width: 99%;
+    margin-bottom: 10%; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 5px;
+    text-align: center;
+    grid-template-areas:
+    "desayuno almuerzo"
+    "merienda cena";
+}
+#desayuno{
+    grid-area: desayuno;
+}
+#almuerzo{
+    grid-area: almuerzo;
+}
+#merienda{
+    grid-area: merienda;
+}
+#cena{
+    grid-area: cena;
+}

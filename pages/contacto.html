@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/favicon-16x16.png" alt="logo de ViveSaludable, un estilo de vida activo y equilibrado">
+    <title>ViveSaludable-Contacto</title>
+</head>
+<body>
+    <!--Inicio barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img class="logo-nav" src="../assets/logo_png_bl.png" alt="logo de ViveSaludable, un estilo de vida activo y equilibrado">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item disenionav">
+                    <a class="nav-link pages" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+              <li class="nav-item disenionav">
+                <a class="nav-link pages" aria-current="page" href="../pages/recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item disenionav">
+                <a class="nav-link pages" href="../pages/entrenamiento.html">Entrenamiento</a>
+              </li>
+              <li class="nav-item disenionav">
+                <a class="nav-link pages" href="../pages/consejos.html">Consejos</a>
+              </li>
+              <li class="nav-item disenionav">
+                <a class="nav-link pages" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Fin barra de navegación-->
+    <header class="encabezado">
+        <h1>EL CAMBIO, A UN CLICK DE DISTANCIA</h1>
+        <h2>¿Quieres obtener un plan a tu medida?</h2>
+    </header>
+    <main class="contenido">
+        <!--Inicio formulario-->
+        <section class="formulario-mq">
+            <form class="formu" action="envio.php" method="post">
+                <div class="formulario">
+                    <label class="datos" for="nombre completo">Ingresa tu nombre completo</label>
+                    <input class="form-control-sm" type="text" id="nombre completo" placeholder="Mi nombre es..." required>
+                </div>
+                <div>
+                    <label class="datos" for="edad">Cuántos años tienes?</label>
+                    <input class="form-control-sm" type="number" id="edad" placeholder="Mi edad es..." required>
+                </div>
+                <div>
+                    <label class="datos" for="nacimiento">Fecha de nacimiento</label>
+                    <input class="form-control-sm" type="date" id="nacimiento">
+                </div>
+                <div>
+                    <label class="datos" for="sexo">Sexo</label>
+                    <input type="checkbox" id="femenino">
+                    <label class="opciones" for="femenino">Femenino</label>
+                    <input type="checkbox" id="masculino">
+                    <label class="opciones" for="masculino">Masculino</label>
+                    <input type="checkbox" id="nodecir">
+                    <label class="opciones" for="nodecir">Prefiero no decirlo</label>
+                </div>
+                <div>
+                    <label class="datos" for="peso">Ingresa tu peso corporal</label>
+                    <input class="form-control-sm" type="number" id="peso" placeholder="Mi peso es de..." required>
+                    <input type="radio" id="libras">
+                    <label class="opciones" for="libras">Libras</label>
+                    <input type="radio" id="kilos">
+                    <label class="opciones" for="kilos">Kilos</label>
+                </div>
+                <div>
+                    <label class="datos" for="altura">Cuál es tu altura?</label>
+                    <input class="form-control-sm" type="number" id="altura" placeholder="Mi altura es de..." required>
+                    <input type="radio" id="pies">
+                    <label class="opciones" for="pies">Pies</label>
+                    <input type="radio" id="cm">
+                    <label class="opciones" for="cm">Cm</label>
+                </div>
+                <div>
+                    <label class="datos" for="ejercicio">Qué tan seguido haces ejercicio?</label>
+                    <label class="opciones" for="poco">Poco</label>
+                    <input class="form-control-sm" type="range" id="ejercicio">
+                    <label class="opciones" for="mucho">Mucho</label>
+                </div>
+                <div>
+                    <label class="datos" for="mensaje">Quieres dejarnos algún comentario dicional?</label><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" required>Escribe tu mensaje aquí</textarea>
+                </div>
+                <div class="boton-form">
+                    <input class="btn" type="reset" value="Reiniciar">
+                    <input class="btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <!--Fin formulario-->
+        <!--Inicio reseñas-->
+        <aside class="resenias">
+            <h3>Reseñas de personas que obtuvieron buenos resultados con nuestros planes</h3>
+            <div>
+                <img src="../assets/reseña anabella.jpeg" alt="foto de Anabella">
+                <p>"Sigo a ViveSaludable hace 5 años y, actualmente, me siento con las energías que no podía tener cuando no le<br>daba una verdadera importancia a mis hábitos. Me siento orgullosa de mi cuerpo y siento tranquilidad de entender que<br>
+                no es necesario privarse de cosas toda la vida para obtener buenos resultados"</p>
+                <p>Anabella H.</p>
+            </div>
+            <div>
+                <img src="../assets/reseña daiana.jpeg" alt="foto de Daiana">
+                <p>"Unificar una buena alimentación con ejercicios para el cuerpo hizo que me sienta con más fuerzas. Las recetas<br> que ViveSaludable me brindó en el plan hecho a mi medida, me permitió elegir los alimentos según mis gustos,<br>
+                dándome opciones más sanas sin dejar de ser deliciosas!"</p>
+                <p>Daiana M.</p>
+            </div>
+            <div>
+                <img src="../assets/reseña maria.jpeg" alt="foto de María">
+                <p>"Me costaba mucho hacer ejercicios, sentía que no era lo mío, pero sabía que necesitaba hacer un cambio. Cuando<br> me recomendaron ViveSaludable, me di cuenta que se puede comenzar de a poco y avanzar a medida que se desarrolla<br>
+                una disciplina. Ahora me divierto con rutinas de ejercicio y las listas musicales que recomiendan. Incluso podés<br> elegir tu estilo musical y ellos mismos se encargan de preparar todo! Lo único necesario son las ganas."</p>
+                <p>María D.</p>
+            </div>
+        </aside>
+    </main>
+            <!--Inicio pie de página Redes-->
+            <footer>
+                <div class="pie">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg> <!--alt="Logo de red social Facebook"> -->
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+                        <!-- <img class="redes" src="./assets/Instagram-Logo-PNG.png" alt="Logo de red social Instagram"> -->
+                    </a>
+                </div>
+                <div>
+                    <p>2023 © Micheref Melisa</p>
+                </div>
+            </footer>
+            <!--Fin pie de página-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

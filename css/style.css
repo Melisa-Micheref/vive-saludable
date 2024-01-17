@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Caveat&family=Kalnia&family=Mukta&family=Outfit:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Diseño general */
+/* Diseño nav */
+.menu{
+    width: 100%;
+    position: fixed;
+    height: 200px;
+    background-image: url(../assets/fondo\ body.jpg);
+    background-size: auto;
+    background-attachment: fixed; 
+}
+.pages{
+    background-color: rgb(240, 240, 102);
+    color: rgb(175, 43, 191);
+    border: solid rgb(175, 43, 191) 2px;
+    border-style: dotted;
+}
+li a:hover{
+    font-weight: 700;
+    padding:20px;
+    background-color: rgb(240, 240, 102);
+    color: rgb(117, 18, 128);
+    border: solid rgb(175, 43, 191) 2px;
+    border-radius: 20px;
+    text-decoration:underline;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28855, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler{
+    border: 2px solid rgb(240, 240, 102);
+}
+
+/* Diseño img de collage principal*/
+.img1{
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+}
+.img2{
+    width: 560px;
+    height: 200px;
+    object-fit: cover;
+}
+/* Diseño logo */
+.logo-nav{
+    width: 250px;
+    height: 190px;
+    padding: 2px;
+    border: solid rgb(175, 43, 191) 2px;
+    border-style: double;
+}
+/* Diseño bg y titulos */
+body{
+    background-color: rgb(91, 200, 175, 0.3);
+}
+.encabezado{
+    padding-top: 15%;
+}
+
+h1{
+    font-family: 'Mukta';
+    text-align: center;
+    color: rgb(7, 7, 142);
+}
+h2{
+    font-family: 'Outfit', sans-serif;
+    color:rgb(175, 43, 191);
+    text-decoration-line: underline;
+    font-style: oblique;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+h3, h4{
+    color:rgb(175, 43, 191);
+    font-weight:bold;
+    font-size: 30px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+/* Diseño contenidos */
+.contenido{
+    padding: 4% 10%;
+    text-align: center;
+    width: 90%;
+}
+.contenido img{
+    width: 500px;
+    height: 400px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.contenido section{
+    padding:20px;
+}
+.tabla{
+    margin-left: 40%;
+    margin-top: 3%;
+    background-color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+p{
+    font-family: 'Kalnia', serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight:bold;
+}
+/* Diseño footer */
+.pie{
+    margin-left: 45%;
+}
+.redes{
+    height: 10%;
+    width:10%;
+    display: inline-block;
+}
+
+/* Diseño pag Recetas */
+.img-recetas{
+    width: 99%;
+    height: auto;
+    padding: 5px;
+    margin-left: 5px;
+}
+ol{
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    line-height: 50px;
+    font-style: italic;
+    margin: 5px;
+    padding: 10px 0;
+}
+ol li{
+    font-weight: bolder;
+    padding: 10px;
+}
+.comidas{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 0 20px;
+    align-items: center;
+}
+/* Diseño pag consejos */
+.img-consejos{
+        width: 80%;
+        padding: 5px;
+        margin-left: 40px;
+}
+.ul-conse{
+    list-style: none;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 3%;
+    color: rgb(240, 240, 102);
+    background-color: rgb(175, 43, 191);
+    width: auto;
+}
+/* Diseño pag Contacto */
+.formu{
+        width: max-content;
+        height: auto;
+        border: solid rgb(175, 43, 191) 4px;
+}
+.formu div{
+    padding: 10px;
+    font-family: 'Mukta';
+    font-size: x-large;
+    background-color: rgb(245, 245, 141);
+}
+.datos{
+    padding: 12px;
+    color: rgb(117, 18, 128);
+}
+.opciones{
+    color: rgb(187, 67, 201);
+    font-size: large;
+}
+input:focus{
+    outline: solid 2px rgb(187, 67, 201);
+}
+input:checked{
+    color: rgb(117, 18, 128);
+}
+.placeholder{
+    color: rgb(187, 67, 201);
+
+}
+.btn{
+    background-color:rgb(117, 18, 128);
+    color:white;
+    margin-top:10px;
+}
+.btn:hover{
+    background-color: rgb(187, 67, 201);
+    color: white;
+}
+.resenias img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+/* Breackpoints */
+
+@media(max-width:1299px){
+    .encabezado{
+        padding-top: 200px;
+    }
+}
+@media(width>=450px){
+    .img-consejos{
+        padding-left: 20px;
+    }
+    .jarra{
+        padding-right: 40px;
+    }
+}
+
+@media(width<=449px){
+    .encabezado{
+        padding-left: 20px;
+    }
+    .img-consejos{
+        width: 400px;
+    }
+    .jarra{
+        padding-right: 40px;
+    }
+}
+@media(width>720x){
+    .formulario-mq{
+        margin-right: 40px;
+    }
+}
